@@ -13,7 +13,9 @@ public class AppRunner implements CommandLineRunner {
 	PropertiesConfig prop;
 	
 	public void run(String... args) {
+		
 		System.out.println(prop.toString());
+		
 	}
 	
 }
