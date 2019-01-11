@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package app;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,4 +19,26 @@ public class AppRunner implements CommandLineRunner {
 		
 	}
 	
+=======
+package app;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
+
+import config.PropertiesConfig;
+
+@Component
+public class AppRunner implements CommandLineRunner {
+	
+	@Autowired
+	PropertiesConfig prop;
+	
+	public void run(String... args) {
+		
+		System.out.println(prop.toString());
+		
+	}
+	
+>>>>>>> d5a66117f782a79f1f1512adc635f413896b3bc6
 }
